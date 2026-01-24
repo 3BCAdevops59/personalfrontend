@@ -1,0 +1,395 @@
+/* ============================================
+   NOTE FORM - GLASSMORPHISM DESIGN
+   ============================================ */
+
+.note-form-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(16, 185, 129, 0.1);
+  border-radius: 24px;
+  overflow: hidden;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 8px 32px rgba(16, 185, 129, 0.15);
+}
+
+.note-form-container:focus-within {
+  border-color: rgba(16, 185, 129, 0.3);
+  box-shadow: 
+    0 0 0 1px rgba(16, 185, 129, 0.2),
+    0 8px 32px rgba(16, 185, 129, 0.25),
+    inset 0 0 20px rgba(16, 185, 129, 0.08);
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.note-form-header {
+  padding: 1.75rem 2rem;
+  background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(16, 185, 129, 0.05));
+  border-bottom: 1px solid rgba(16, 185, 129, 0.15);
+}
+
+.note-form-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  background: linear-gradient(135deg, #f8fafc 0%, #10b981 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  letter-spacing: -0.02em;
+  margin: 0;
+}
+
+.note-form {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  gap: 1.5rem;
+  overflow-y: auto;
+}
+
+/* ============================================
+   FORM GROUPS
+   ============================================ */
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.title-group {
+  position: relative;
+}
+
+.title-input {
+  background: rgba(255, 255, 255, 0.1);
+  border: 2px solid rgba(16, 185, 129, 0.2);
+  border-radius: 12px;
+  padding: 1rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #f8fafc;
+  font-family: inherit;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  letter-spacing: -0.01em;
+}
+
+.title-input::placeholder {
+  color: #94a3b8;
+  font-weight: 500;
+}
+
+.title-input:focus {
+  outline: none;
+  border-color: var(--emerald);
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 
+    0 0 0 1px rgba(16, 185, 129, 0.3),
+    inset 0 0 20px rgba(16, 185, 129, 0.05);
+}
+
+.title-divider {
+  height: 2px;
+  background: linear-gradient(90deg, transparent, rgba(16, 185, 129, 0.3), transparent);
+  margin: 0.5rem 0;
+}
+
+.title-counter {
+  font-size: 0.75rem;
+  color: #94a3b8;
+  font-weight: 500;
+  color: #64748b;
+  text-align: right;
+  font-weight: 500;
+}
+
+/* Rich Text Editor */
+
+.editor-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.rich-editor {
+  flex: 1;
+}
+
+.ql-container {
+  font-size: 0.95rem !important;
+  font-family: inherit !important;
+  background: transparent !important;
+  border: 1px solid rgba(16, 185, 129, 0.15) !important;
+  border-radius: 0 0 12px 12px !important;
+  color: #f8fafc !important;
+}
+
+.ql-editor {
+  min-height: 300px;
+  padding: 1rem !important;
+  color: #f8fafc !important;
+  background: rgba(15, 23, 42, 0.3) !important;
+}
+
+.ql-editor::placeholder {
+  color: #94a3b8 !important;
+  font-weight: 500 !important;
+}
+
+.ql-editor.ql-blank::before {
+  color: #94a3b8 !important;
+  font-style: normal !important;
+  font-weight: 500 !important;
+}
+
+.ql-toolbar {
+  background: rgba(15, 23, 42, 0.4) !important;
+  border: 1px solid rgba(16, 185, 129, 0.15) !important;
+  border-radius: 12px 12px 0 0 !important;
+  padding: 0.75rem !important;
+}
+
+.ql-toolbar.ql-snow .ql-stroke {
+  stroke: #94a3b8 !important;
+}
+
+.ql-toolbar.ql-snow .ql-fill,
+.ql-toolbar.ql-snow .ql-stroke.ql-fill {
+  fill: #94a3b8 !important;
+}
+
+.ql-toolbar.ql-snow .ql-picker-label {
+  color: #94a3b8 !important;
+}
+
+.ql-toolbar.ql-snow button:hover,
+.ql-toolbar.ql-snow button:focus,
+.ql-toolbar.ql-snow button.ql-active,
+.ql-toolbar.ql-snow .ql-picker-label:hover,
+.ql-toolbar.ql-snow .ql-picker-item:hover,
+.ql-toolbar.ql-snow .ql-picker-item.ql-selected {
+  color: #10b981 !important;
+}
+
+.ql-toolbar.ql-snow button:hover .ql-stroke,
+.ql-toolbar.ql-snow button:focus .ql-stroke,
+.ql-toolbar.ql-snow button.ql-active .ql-stroke,
+.ql-toolbar.ql-snow .ql-picker-label:hover .ql-stroke,
+.ql-toolbar.ql-snow .ql-picker-item:hover .ql-stroke,
+.ql-toolbar.ql-snow .ql-picker-item.ql-selected .ql-stroke {
+  stroke: #10b981 !important;
+}
+
+.ql-toolbar.ql-snow button:hover .ql-fill,
+.ql-toolbar.ql-snow button:focus .ql-fill,
+.ql-toolbar.ql-snow button.ql-active .ql-fill,
+.ql-toolbar.ql-snow .ql-picker-label:hover .ql-fill,
+.ql-toolbar.ql-snow .ql-picker-item:hover .ql-fill,
+.ql-toolbar.ql-snow .ql-picker-item.ql-selected .ql-fill {
+  fill: #10b981 !important;
+}
+
+/* ============================================
+   ALERT MESSAGES
+   ============================================ */
+
+.alert {
+  padding: 1rem;
+  border-radius: 12px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  border: 1px solid;
+  animation: slideInDown 0.3s ease;
+}
+
+@keyframes slideInDown {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.alert-error {
+  background: rgba(239, 68, 68, 0.15);
+  border-color: rgba(239, 68, 68, 0.3);
+  color: #fca5a5;
+  font-weight: 500;
+}
+
+.alert-success {
+  background: rgba(16, 185, 129, 0.15);
+  border-color: rgba(16, 185, 129, 0.3);
+  color: #10b981;
+  font-weight: 500;
+}
+
+.alert p {
+  margin: 0;
+}
+
+/* ============================================
+   FORM ACTIONS
+   ============================================ */
+
+.form-actions {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.875rem 1.75rem;
+  background: linear-gradient(135deg, var(--emerald) 0%, var(--emerald-dark) 100%);
+  color: #f8fafc;
+  border: none;
+  border-radius: 12px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 15px rgba(16, 185, 129, 0.3);
+  font-family: inherit;
+  letter-spacing: 0.01em;
+}
+
+.btn:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(16, 185, 129, 0.4);
+}
+
+.btn:active:not(:disabled) {
+  transform: translateY(0);
+  box-shadow: 0 2px 10px rgba(16, 185, 129, 0.3);
+}
+
+.btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.btn-save {
+  flex: 1;
+}
+
+.btn-cancel {
+  flex: 1;
+  background: linear-gradient(135deg, rgba(107, 114, 128, 0.5), rgba(75, 85, 99, 0.5));
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.btn-cancel:hover:not(:disabled) {
+  background: linear-gradient(135deg, rgba(107, 114, 128, 0.7), rgba(75, 85, 99, 0.7));
+}
+
+/* ============================================
+   SCROLLBAR
+   ============================================ */
+
+.note-form::-webkit-scrollbar {
+  width: 8px;
+}
+
+.note-form::-webkit-scrollbar-track {
+  background: rgba(16, 185, 129, 0.05);
+}
+
+.note-form::-webkit-scrollbar-thumb {
+  background: rgba(16, 185, 129, 0.3);
+  border-radius: 4px;
+}
+
+.note-form::-webkit-scrollbar-thumb:hover {
+  background: rgba(16, 185, 129, 0.5);
+}
+
+.ql-editor::-webkit-scrollbar {
+  width: 8px;
+}
+
+.ql-editor::-webkit-scrollbar-track {
+  background: rgba(16, 185, 129, 0.05);
+}
+
+.ql-editor::-webkit-scrollbar-thumb {
+  background: rgba(16, 185, 129, 0.3);
+  border-radius: 4px;
+}
+
+.ql-editor::-webkit-scrollbar-thumb:hover {
+  background: rgba(16, 185, 129, 0.5);
+}
+
+/* ============================================
+   RESPONSIVE DESIGN
+   ============================================ */
+
+@media (max-width: 768px) {
+  .note-form-container {
+    border-radius: 16px;
+  }
+
+  .note-form-header {
+    padding: 1.25rem 1.5rem;
+  }
+
+  .note-form-title {
+    font-size: 1.25rem;
+  }
+
+  .note-form {
+    padding: 1.5rem;
+  }
+
+  .form-actions {
+    flex-direction: column;
+  }
+
+  .btn {
+    padding: 0.75rem 1.5rem;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .note-form-container {
+    border-radius: 12px;
+  }
+
+  .note-form-header {
+    padding: 1rem 1rem;
+  }
+
+  .note-form-title {
+    font-size: 1.1rem;
+  }
+
+  .note-form {
+    padding: 1rem;
+    gap: 1rem;
+  }
+
+  .title-input {
+    font-size: 1.1rem;
+    padding: 0.875rem;
+  }
+
+  .ql-editor {
+    min-height: 200px !important;
+  }
+
+  .btn {
+    padding: 0.75rem 1.25rem;
+    font-size: 0.85rem;
+  }
+}
