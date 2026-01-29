@@ -8,8 +8,8 @@ import './App.css';
 function App() {
     const [refreshTrigger, setRefreshTrigger] = useState(0);
      const [editingNote, setEditingNote] = useState(null);
-  const [searchTerm, setSearchTerm] = useState('');
-  const [notes, setNotes] = useState([]);
+     const [searchTerm, setSearchTerm] = useState('');
+     const [notes, setNotes] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState('');
   const [sidebarOpen, setSidebarOpen] = useState(true);
