@@ -84,7 +84,7 @@ function App() {
 
         <nav className="sidebar-nav">
           <button
-            className={`nav-item ${activeFilter === 'all' ? 'active' : ''}`}
+                 className={`nav-item ${activeFilter === 'all' ? 'active' : ''}`}
             onClick={() => setActiveFilter('all')}
             title="All Notes"
           >
