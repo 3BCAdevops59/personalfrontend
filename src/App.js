@@ -6,7 +6,7 @@ import noteService from './services/NoteService';
 import './App.css';
 
 function App() {
-       const [refreshTrigger, setRefreshTrigger] = useState(0);
+  const [refreshTrigger, setRefreshTrigger] = useState(0);
   const [editingNote, setEditingNote] = useState(null);
   const [searchTerm, setSearchTerm] = useState('');
   const [notes, setNotes] = useState([]);
