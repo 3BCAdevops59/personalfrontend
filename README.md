@@ -71,19 +71,19 @@ https://personalfrontend.vercel.app
 ![Delete Note](screenshots/Delete-notes.png)
 
 ### Error Handling
-![Error Handling List](screenshots/Error Handling.png)
+![Error Handling List](screenshots/Error-Handling.png)
 
 ###  Sonar Anaysis  
-![Sonar Analysis](screenshots/Sonar Analysis(frontend).png)
+![Sonar Analysis](screenshots/Sonar-Analysis-frontend.png)
 
 ### Proper pull Request
-![Pull request](screenshots/Proper pull Request(frontend).png)
+![Pull request](screenshots/ProperPull-request-frontend.png)
 
 ###  Vercel Deployment
-![Deployment](screenshots/Sonar Analysis(frontend).png)
+![Deployment](screenshots/Vercel-Deployment.png)
 
 ### Vercel Deployment with domain name
-![Domain Name](screenshots/Vercel Deployment with Domain Name.png)
+![Domain Name](screenshots/Vercel-Deployment-with-Domain-name.png)
 
 
 ### ✅ Frontend Screenshots
