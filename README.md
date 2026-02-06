@@ -1,70 +1,94 @@
-# Getting Started with Create React App
+# Personal Notes Organizer – Frontend
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 📌 Project Overview
+Personal Notes Organizer is a web-based application that allows users to create, view, update, and delete personal notes.  
+This frontend is developed using **React.js** and communicates with a backend REST API deployed on **Render**.
 
-## Available Scripts
+The application follows a clean UI design and supports real-time CRUD operations.
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## 🛠️ Technologies Used
+- React.js
+- Axios
+- HTML5
+- CSS3
+- JavaScript (ES6)
+- Vercel (Deployment)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## ✨ Features
+- Create new notes
+- View all notes
+- Edit existing notes
+- Delete notes
+- Search notes by title or content
+- Responsive UI
+- Environment-based API configuration
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## ⚙️ Environment Configuration
 
-### `npm run build`
+Create a `.env` file in the root directory:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```env
+REACT_APP_API_BASE_URL=https://personalbackend-1-0.onrender.com
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+📂 Project Structure
+src/
+ ├── components/
+ │   ├── NoteForm.js
+ │   └── NoteList.js
+ ├── services/
+ │   └── NoteService.js
+ ├── App.js
+ ├── index.js
+ └── App.css
 
-### `npm run eject`
+🔌 API Integration
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+All API calls are handled using Axios.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+const API_BASE_URL = `${process.env.REACT_APP_API_BASE_URL}/api/notes`;
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+🚀 Deployment
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Frontend is deployed on Vercel.
 
-## Learn More
+🔗 Live URL:
+https://personalfrontend.vercel.app
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 📸 Screenshots
 
-### Code Splitting
+### Create the New and Update the  Notes Dashboard
+![Create Page](screenshots/create-note.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+###  Delete New Note
+![Delete Note](screenshots/Delete-notes.png)
 
-### Analyzing the Bundle Size
+### Error Handling
+![Error Handling List](screenshots/Error Handling.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+###  Sonar Anaysis  
+![Sonar Analysis](screenshots/Sonar Analysis(frontend).png)
 
-### Making a Progressive Web App
+### Proper pull Request
+![Pull request](screenshots/Proper pull Request(frontend).png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+###  Vercel Deployment
+![Deployment](screenshots/Sonar Analysis(frontend).png)
 
-### Advanced Configuration
+### Vercel Deployment with domain name
+![Domain Name](screenshots/Vercel Deployment with Domain Name.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### ✅ Frontend Screenshots
+1. Vercel deployed app homepage  
+2. Create new note screen  
+3. Notes list with data  
+4. Delete,Update,Search notes working  
+5. Browser console showing successful API call (200 OK)
