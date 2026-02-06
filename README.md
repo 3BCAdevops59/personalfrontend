@@ -35,9 +35,11 @@ Create a `.env` file in the root directory:
 
 ```env
 REACT_APP_API_BASE_URL=https://personalbackend-1-0.onrender.com
+```
 
+---
 
-📂 Project Structure
+## 📂 Project Structure
 src/
  ├── components/
  │   ├── NoteForm.js
@@ -48,13 +50,17 @@ src/
  ├── index.js
  └── App.css
 
-🔌 API Integration
+---
+
+## 🔌 API Integration
 
 All API calls are handled using Axios.
 
 const API_BASE_URL = `${process.env.REACT_APP_API_BASE_URL}/api/notes`;
 
-🚀 Deployment
+---
+
+## 🚀 Deployment
 
 Frontend is deployed on Vercel.
 
@@ -65,25 +71,25 @@ https://personalfrontend.vercel.app
 ## 📸 Screenshots
 
 ### Create the New and Update the  Notes Dashboard
-![Create Page](screenshots/create-note.png)
+![Create Page](./screenshots/create-note.png)
 
 ###  Delete New Note
-![Delete Note](screenshots/Delete-notes.png)
+![Delete Note](./screenshots/Delete-notes.png)
 
 ### Error Handling
-screenshots/Error-Handling.png
+![Error Handling](./screenshots/Error-Handling.png)
 
 ###  Sonar Anaysis  
-![Sonar Analysis](screenshots/Sonar-Analysis-frontend.png)
+![Sonar Analysis](./screenshots/Sonar-Analysis-frontend.png)
 
 ### Proper pull Request
-![Pull request](screenshots/ProperPull-request-frontend.png)
+![Pull request](./screenshots/ProperPull-request-frontend.png)
 
 ###  Vercel Deployment
-![Deployment](screenshots/Vercel-Deployment.png)
+![Deployment](./screenshots/Vercel-Deployment.png)
 
 ### Vercel Deployment with domain name
-![Domain Name](screenshots/Vercel-Deployment-with-Domain-name.png)
+![Domain Name](./screenshots/Vercel-Deployment-with-Domain-name.png)
 
 
 ### ✅ Frontend Screenshots
