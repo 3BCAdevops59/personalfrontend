@@ -71,7 +71,7 @@ https://personalfrontend.vercel.app
 ![Delete Note](screenshots/Delete-notes.png)
 
 ### Error Handling
-![Error Handling List](screenshots/Error-Handling.png)
+screenshots/Error-Handling.png
 
 ###  Sonar Anaysis  
 ![Sonar Analysis](screenshots/Sonar-Analysis-frontend.png)
