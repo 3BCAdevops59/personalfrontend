@@ -1,11 +1,8 @@
 import axios from 'axios';
 
-const API_BASE_URL = 'http://localhost:8080/api/notes';
+const API_BASE_URL = `${process.env.REACT_APP_API_BASE_URL}/api/notes`;
 
 const noteService = {
-  /**
-   * Get all notes
-   */
   getAllNotes: async () => {
     try {
       const response = await axios.get(API_BASE_URL);
@@ -16,9 +13,6 @@ const noteService = {
     }
   },
 
-  /**
-   * Create a new note
-   */
   createNote: async (note) => {
     try {
       const response = await axios.post(API_BASE_URL, {
@@ -32,9 +26,6 @@ const noteService = {
     }
   },
 
-  /**
-   * Update an existing note
-   */
   updateNote: async (id, note) => {
     try {
       const response = await axios.put(`${API_BASE_URL}/${id}`, {
@@ -48,9 +39,6 @@ const noteService = {
     }
   },
 
-  /**
-   * Delete a note
-   */
   deleteNote: async (id) => {
     try {
       await axios.delete(`${API_BASE_URL}/${id}`);
