@@ -230,3 +230,15 @@ How created: Create a note, click its delete action, confirm the removal (if pro
 3. Notes list with data
 4. Delete, update, search notes working
 5. Browser console showing successful API call (200 OK)
+
+
+## 🎥 Project Demo Video
+
+This demo video demonstrates:
+- Application functionality
+- CRUD operations
+- API integration
+- Error handling
+- Deployment verification
+
+▶️ [Click here to watch the demo video](https://drive.google.com/file/d/1EvM0qBFFycwEg8bR4rBgtnVyoimoQO7l/view?t=5)
