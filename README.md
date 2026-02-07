@@ -160,45 +160,69 @@ How created: Create a note, click its delete action, confirm the removal (if pro
 
 ### Error Handling
 ![Error Handling](./screenshots/Error-Handling.png)
-What it is: The UI state displayed when an API error occurs.
-Why it is used: It demonstrates robust failure handling and clear user messaging.
-How it works: A failed API call returns an error that is caught and rendered in the UI.
-How created: Temporarily stop or misconfigure the API URL in `.env`, reload the app, trigger a fetch or save action, and capture the displayed error message.
+### What it is:
+       The UI state displayed when an API error occurs.
+### Why it is used:
+       It demonstrates robust failure handling and clear user messaging.
+### How it works: 
+       A failed API call returns an error that is caught and rendered in the UI.
+### How created: 
+      Temporarily stop or misconfigure the API URL in `.env`, reload the app, trigger a fetch or save action, and capture the displayed error message.
 
 ### Sonar Analysis
 ![Sonar Analysis](./screenshots/Sonar-Analysis-frontend.png)
-What it is: The static analysis results for the frontend codebase.
-Why it is used: It supports claims of maintainability and quality standards.
-How it works: The Sonar scanner submits metrics and issue data to SonarQube for analysis.
-How created: Run the Sonar scanner with the project key and configured server, then capture the SonarQube dashboard summary after analysis completes.
+### What it is:
+     The static analysis results for the frontend codebase.
+### Why it is used:
+     It supports claims of maintainability and quality standards.
+### How it works: 
+     The Sonar scanner submits metrics and issue data to SonarQube for analysis.
+### How created: 
+     Run the Sonar scanner with the project key and configured server, then capture the SonarQube dashboard summary after analysis completes.
 
 ### Proper Pull Request
 ![Pull request](./screenshots/ProperPull-request-frontend.png)
-What it is: A documented pull request with descriptive context and checks.
-Why it is used: It demonstrates professional collaboration practices and review readiness.
-How it works: A feature branch is reviewed and validated before merge.
-How created: Open a PR from a feature branch, fill in the template (if any), ensure checks pass, then capture the PR overview page.
+### What it is:
+    A documented pull request with descriptive context and checks.
+### Why it is used:
+   It demonstrates professional collaboration practices and review readiness.
+### How it works: 
+   A feature branch is reviewed and validated before merge.
+### How created: 
+     Open a PR from a feature branch, fill in the template (if any), ensure checks pass, then capture the PR overview page.
 
 ### Vercel Deployment
 ![Deployment](./screenshots/Vercel-Deployment.png)
-What it is: The deployment success screen for the hosted frontend.
-Why it is used: It verifies the production pipeline and confirms a successful build.
-How it works: Vercel builds the app from the repository and serves the static assets.
-How created: Connect the repository to Vercel, trigger a deployment, wait for build completion, and capture the deployment success screen.
+### What it is:
+       The deployment success screen for the hosted frontend.
+#### Why it is used:
+      It verifies the production pipeline and confirms a successful build.
+### How it works: 
+    Vercel builds the app from the repository and serves the static assets.
+### How created:
+ Connect the repository to Vercel, trigger a deployment, wait for build completion, and capture the deployment success screen.
 
 ### Vercel Deployment with Domain Name
 ![Domain Name](./screenshots/Vercel-deployment-with-Domain-name.png)
-What it is: The deployment configuration with a custom domain.
-Why it is used: It confirms production routing and domain verification.
-How it works: DNS records point to Vercel and the domain is validated in project settings.
-How created: Add the domain in Vercel project settings, update DNS records, wait for verification, and capture the domain status page.
+### What it is: 
+     The deployment configuration with a custom domain.
+#### Why it is used: 
+      It confirms production routing and domain verification.
+### How it works: 
+      DNS records point to Vercel and the domain is validated in project settings.
+#### How created: 
+     Add the domain in Vercel project settings, update DNS records, wait for verification, and capture the domain status page.
 
 ### DevOps Documentation (PDF)
 [DevOps PDF](./screenshots/Deveops.pdf)
-What it is: A DevOps reference document for the frontend.
-Why it is used: It provides pipeline notes, operational practices, and evaluation artifacts.
-How it works: The document captures the intended DevOps process and evidence in a single distributable file.
-How created: Export or save the documentation as a PDF and place it in the `screenshots/` folder for repository access.
+### What it is:
+     A DevOps reference document for the frontend.
+### Why it is used:
+     It provides pipeline notes, operational practices, and evaluation artifacts.
+### How it works:
+ The document captures the intended DevOps process and evidence in a single distributable file.
+### How created:
+ Export or save the documentation as a PDF and place it in the `screenshots/` folder for repository access.
 
 ## Frontend Screenshot Checklist
 1. Vercel deployed app homepage
