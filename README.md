@@ -53,7 +53,7 @@ How it works: React reads environment variables prefixed with `REACT_APP_` at bu
 Create a `.env` file in the root directory:
 
 ```env
-REACT_APP_API_BASE_URL=https://personalbackend-1-0.onrender.com
+REACT_APP_API_BASE_URL=https://personalnotebackend-h5bjehb2abeqhjab.southeastasia-01.azurewebsites.net
 ```
 
 ## Project Structure
