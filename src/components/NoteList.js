@@ -33,10 +33,6 @@ const NoteList = ({ notes, allNotes, loading, error, onEditNote, onDelete, searc
 
   return (
     <div className="notes-container">
-      <div className="notes-header">
-        <h2 className="notes-title">All Notes <span className="notes-count">({notes.length})</span></h2>
-      </div>
-
       {error && (
         <div className="error-message">
           <p>{error}</p>
