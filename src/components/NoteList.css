@@ -121,7 +121,7 @@
   background: white;
   border-radius: 16px;
   overflow: hidden;
-  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
   border: 1px solid rgba(0, 0, 0, 0.05);
   height: 100%;
@@ -130,15 +130,12 @@
 }
 
 .note-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 
-    0 8px 16px rgba(16, 185, 129, 0.12),
-    0 16px 40px rgba(16, 185, 129, 0.18),
-    0 0 24px rgba(16, 185, 129, 0.1),
-    inset 0 1px 0 rgba(255, 255, 255, 0.4);
-  border-color: rgba(16, 185, 129, 0.3);
-  background: linear-gradient(135deg, rgba(255, 255, 255, 1) 0%, rgba(240, 253, 250, 0.5) 100%);
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(16, 185, 129, 0.15);
+  border-color: rgba(16, 185, 129, 0.2);
 }
+
+/* Emerald Stripe */
 
 .note-card-stripe {
   position: absolute;
@@ -147,12 +144,12 @@
   width: 5px;
   height: 100%;
   background: linear-gradient(180deg, #10b981 0%, #059669 100%);
-  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .note-card:hover .note-card-stripe {
   width: 8px;
-  box-shadow: 0 0 24px rgba(16, 185, 129, 0.4);
+  box-shadow: 0 0 20px rgba(16, 185, 129, 0.3);
 }
 
 /* Card Content */
